@@ -62,7 +62,7 @@ body {
 }
 
 .nav-right {
-    a {
+    .btn {
         display: inline-block;
         width: 163px;
         padding: 9px 32px;
@@ -74,7 +74,7 @@ body {
     }
 }
 
-.nav-right a:hover {
+.nav-right .btn:hover {
     color: black;
     background: white;
 }
