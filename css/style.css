@@ -8,14 +8,6 @@ body {
     font-size: 18px;
     font-family: 'Livvic';
     font-weight: 700;
-
-    li {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
 }
 
 .container {
@@ -35,6 +27,7 @@ body {
     padding-top: 73px;
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
 
 .logo {
@@ -43,13 +36,22 @@ body {
 
 .nav-left {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 80px;
 }
 
 .nav-left ul {
     display: flex;
     gap: 40px;
+    margin-top: 10px;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+}
+
+.nav-left ul li {
+    list-style-type: none;
 }
 
 .element {
@@ -62,19 +64,15 @@ body {
 }
 
 .nav-right {
-    .btn {
-        display: inline-block;
-        width: 163px;
-        padding: 9px 32px;
-        text-align: center;
-        color: white;
-        border: 2px solid white;
-        border-radius: 50px;
-        transition: all 700ms linear;
-    }
+    text-decoration: none;
+    padding: 9px 32px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: all 700ms linear;
 }
 
-.nav-right .btn:hover {
+.nav-right .but:hover {
     color: black;
     background: white;
 }
@@ -257,6 +255,7 @@ main p {
 }
 
 .homePage4 a {
+    text-decoration: none;
     display: inline-block;
     width: 163px;
     padding: 9px 32px;
@@ -288,6 +287,7 @@ footer {
 }
 
 .logo a {
+    text-decoration: none;
     font-size: 18px;
     line-height: 28px;
     margin-right: 40px;
@@ -299,7 +299,7 @@ footer {
     color: #F67E7E;
 }
 
-.logo img{
+.logo img {
     margin-bottom: 25px;
 }
 
