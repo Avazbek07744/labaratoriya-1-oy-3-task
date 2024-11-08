@@ -4,10 +4,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="myteam - Your trusted team for delivering quality projects and services. We are committed to achieving your goals with professionalism.">
+    <meta name="keywords" content="myteam, professional team, project management, quality service, trusted team">
+    <meta name="author" content="Najot talim labaratoriya 3-task">
+    <meta property="og:title" content="myteam - Professional Project Management and Services">
+    <meta property="og:description" content="Your trusted team for delivering quality projects and services. We are here to help you succeed.">
+
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>myteam</title>
+    <style>
+        .main {
+            background: url(../img/noDifference/home_main.png);
+            height: 700px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .main header nav {
+            padding-top: 73px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .logo {
+            cursor: pointer;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: start;
+            gap: 80px;
+        }
+
+        .nav-left ul {
+            display: flex;
+            gap: 40px;
+            margin-top: 10px;
+        }
+
+        .nav-left ul li a {
+            text-decoration: none;
+        }
+
+        .nav-left ul li {
+            list-style-type: none;
+        }
+
+        .imager {
+            display: none;
+        }
+
+        .element {
+            color: white;
+            transition: all 700ms linear;
+        }
+
+        .element:hover {
+            color: #F67E7E;
+        }
+
+        .nav-right {
+            text-decoration: none;
+            padding: 9px 32px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 50px;
+            transition: all 700ms linear;
+        }
+
+        .nav-right:hover {
+            color: black;
+            background: white;
+        }
+
+        main {
+            padding-top: 129px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main h1 {
+            width: 616px;
+            font-size: 100px;
+            line-height: 100px;
+            color: white;
+        }
+
+        main h1 span {
+            font-size: 100px;
+            line-height: 100px;
+            color: #f67e7e;
+        }
+
+        main div {
+            color: white;
+            width: 445px;
+            height: 166px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        main .b {
+            width: 50px;
+            height: 4px;
+            background: #79C8C7;
+        }
+
+        main p {
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+        @media (width<809px) {
+            .container {
+                width: 689px;
+                margin: 0 auto;
+                padding: 0 40px;
+                text-align: center;
+            }
+
+            .main {
+                min-height: 700px;
+            }
+
+            header {
+                padding-top: 64px;
+            }
+
+            header {
+                padding-bottom: 112px;
+            }
+
+            main {
+                flex-direction: column;
+                gap: 4px;
+                min-height: 220px;
+
+                h1 {
+                    width: 583px;
+                    line-height: 56px;
+                    padding-top: 112px;
+                    font-size: 64px;
+                    padding-bottom: 4px;
+
+                    span {
+                        font-size: 64px;
+                    }
+                }
+
+                div {
+                    width: 457px;
+                    margin: auto;
+                }
+
+
+                .b {
+                    display: none;
+                }
+
+                .elementp {
+                    width: 457px;
+                    margin: auto;
+                    padding-top: 0;
+                }
+            }
+        }
+
+        @media (width<600px) {
+            .container {
+                width: 327px;
+                margin: 0 auto;
+                padding: 0 24px;
+                text-align: center;
+            }
+
+            .nav-left ul,.nav-right {
+                display: none;
+            }
+
+            .main {
+                min-height: 567px;
+            }
+
+            .imager {
+                display: block;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+
+            header {
+                padding-top: 64px;
+                padding-bottom: 80px;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                height: 160px;
+
+                h1 {
+                    width: 327px;
+                    line-height: 20px;
+                    padding-top: 112px;
+                    font-size: 40px;
+
+                    span {
+                        font-size: 40px;
+                    }
+                }
+
+                div {
+                    width: 327px;
+                    margin: auto;
+                }
+
+
+                .b {
+                    display: none;
+                }
+
+                .elementp {
+                    width: 327px;
+                    margin: auto;
+                    padding-top: 0;
+                    font-size: 15px;
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,11 +249,12 @@
                         <img src="./img/svg/logo.svg" loading="lazy" alt="logo image">
                     </div>
                     <ul>
-                        <li><a class="element" href="#">home</a></li>
-                        <li><a class="element" href="#">about</a></li>
+                        <li><a class="element" href="/">home</a></li>
+                        <li><a class="element" href="./pages/about.html">about</a></li>
                     </ul>
                 </div>
-                <a class="nav-right" href="#">contact us</a>
+                <a class="nav-right" href="./pages/contact.html">contact us</a>
+                <img class="imager" src="./img/svg/menu.svg" alt="">
             </nav>
         </header>
         <main class="container">
@@ -121,7 +352,7 @@
     <div class="homePage4">
         <div class="container">
             <h3>Ready to get started?</h3>
-            <a href="/contact">contact us</a>
+            <a href="./pages/contact.html">contact us</a>
         </div>
     </div>
 
@@ -131,8 +362,8 @@
                 <div class="logo">
                     <img src="./img/svg/logo.svg" alt="">
                     <div>
-                        <a href="#">home</a>
-                        <a href="#">about</a>
+                        <a href="../index.html">home</a>
+                        <a href="./about.html">about</a>
                     </div>
                 </div>
                 <p class="info">

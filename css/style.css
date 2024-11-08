@@ -15,107 +15,6 @@ body {
     margin: 0 auto;
 }
 
-.main {
-    background: url(../img/noDifference/home_main.png);
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.main header nav {
-    padding-top: 73px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-
-.logo {
-    cursor: pointer;
-}
-
-.nav-left {
-    display: flex;
-    align-items: start;
-    gap: 80px;
-}
-
-.nav-left ul {
-    display: flex;
-    gap: 40px;
-    margin-top: 10px;
-}
-
-.nav-left ul li a{
-    text-decoration: none;
-}
-
-.nav-left ul li {
-    list-style-type: none;
-}
-
-.element {
-    color: white;
-    transition: all 700ms linear;
-}
-
-.element:hover {
-    color: #F67E7E;
-}
-
-.nav-right {
-    text-decoration: none;
-    padding: 9px 32px;
-    color: white;
-    border: 2px solid white;
-    border-radius: 50px;
-    transition: all 700ms linear;
-}
-
-.nav-right .but:hover {
-    color: black;
-    background: white;
-}
-
-main {
-    padding-top: 129px;
-    display: flex;
-    justify-content: space-between;
-}
-
-main h1 {
-    width: 616px;
-    font-size: 100px;
-    line-height: 100px;
-    color: white;
-}
-
-main h1 span {
-    font-size: 100px;
-    line-height: 100px;
-    color: #f67e7e;
-}
-
-main div {
-    color: white;
-    width: 445px;
-    height: 166px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-main .b {
-    width: 50px;
-    height: 4px;
-    background: #79C8C7;
-}
-
-main p {
-    line-height: 28px;
-    font-weight: 600;
-}
-
 .homePage2 {
     background: url(../img/noDifference/home_bg_image1.png);
     height: 684px;
@@ -128,6 +27,7 @@ main p {
     padding-top: 140px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: initial;
 }
 
@@ -322,9 +222,271 @@ footer {
     margin-bottom: 51px;
 }
 
+.right div img {
+    cursor: pointer;
+}
+
 .right p {
     font-size: 15px;
     font-weight: 600;
     line-height: 25px;
     color: #99a8a9;
+}
+
+
+@media (width<809px) {
+    .container {
+        max-width: 689px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .homePage2 {
+        height: auto;
+    }
+
+    .homePage2-info {
+        padding: 100px 0;
+        flex-direction: column;
+    }
+
+    .h2 {
+        font-size: 32px;
+        padding-bottom: 64px;
+    }
+
+    .homePage2-info .left-info {
+        gap: 32px;
+    }
+
+    .homePage2-cards {
+        gap: 32px;
+    }
+
+    .homePage2-card {
+        text-align: left;
+
+        div {
+            h4 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .homePage3-info {
+        padding: 100px 0;
+    }
+
+    .homePage3 {
+        flex-direction: column;
+        height: auto;
+
+        .h2 {
+            width: 572px;
+            font-size: 32px;
+        }
+    }
+
+    .homePage3-cards {
+        flex-direction: column;
+    }
+
+    .homePage3-card {
+        width: 572px;
+    }
+
+    .homePage4 {
+        min-height: 200px;
+    }
+
+    .homePage4 h3 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .homePage4 a {
+        max-width: 143px;
+        min-height: 28px;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    footer {
+        min-height: 271px;
+    }
+
+    .footer-info {
+        padding: 56px 0;
+        max-width: 698px;
+        flex-direction: column;
+        text-align: right;
+        justify-content: start;
+
+        .left {
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 32px;
+
+            .logo {
+                img {
+                    margin-left: -20px;
+                    margin-bottom: 53px;
+                }
+            }
+
+            .info {
+                font-size: 15px;
+            }
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                justify-content: start;
+            }
+        }
+    }
+
+}
+
+@media (width<600px) {
+    .container {
+        max-width: 327px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .homePage2 {
+        height: auto;
+    }
+
+    .homePage2-info {
+        padding: 64px 0;
+        flex-direction: column;
+    }
+
+    .h2 {
+        width: 240px;
+        font-size: 32px;
+        padding-bottom: 54px;
+        text-align: left;
+    }
+
+    .homePage2-info .left-info {
+        gap: 32px;
+    }
+
+    .homePage2-cards {
+        gap: 32px;
+        padding: 0;
+    }
+
+    .homePage2-card {
+        text-align: left;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 72px;
+        }
+
+        div {
+            width: 327px;
+            text-align: center;
+
+            h4 {
+                font-size: 18px;
+            }
+
+            p {
+                width: 100%;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+
+        .homePage2-card {
+        text-align: left;
+
+        div {
+            h4 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .homePage3-info {
+        padding: 100px 0;
+    }
+
+    .homePage3 {
+        flex-direction: column;
+        height: auto;
+        
+        .h2 {
+            width: 327px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+    
+    .homePage3-cards {
+        flex-direction: column;
+    }
+    
+    .homePage3-card {
+        width: 327px;
+    }
+
+
+    .homePage4 {
+        min-height: 302px;
+    }
+
+    .homePage4 div {
+        flex-direction: column;
+        gap: 24px;
+        width: 327px;
+    }
+
+    .homePage4 h3 {
+        font-size: 29px;
+    }
+
+    .homePage4 a {
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .footer-info .left,
+    .right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .right div{
+        margin-bottom: 6px;
+        padding-bottom: 16px;
+    }
+
+    .left .info {
+        min-height: 100px;
+        font-size: 15px;
+        text-align: center;
+    }
+
 }
