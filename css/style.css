@@ -10,6 +10,11 @@ body {
     font-weight: 700;
 }
 
+.section{
+    width: 1440px;
+    margin: 0 auto;
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -18,23 +23,25 @@ body {
 .homePage2 {
     background: url(../img/noDifference/home_bg_image1.png);
     height: 684px;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .homePage2-info {
-    padding-top: 140px;
+    padding-top: 139px;
+    max-width: 1110px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: initial;
 }
 
 .homePage2-info .left-info {
+    width: 415px;
     display: flex;
     flex-direction: column;
-    gap: 54px;
+    gap: 50px;
 }
 
 .b {
@@ -45,18 +52,22 @@ body {
 
 .h2 {
     width: 445px;
+    height: 144px;
     font-size: 48px;
     color: white;
 }
 
 .homePage2-cards {
-    margin-top: 65px;
+    max-width: 540px;
+    margin-top: 60px;
     display: flex;
     gap: 32px;
     flex-direction: column;
 }
 
 .homePage2-card {
+    width: 100%;
+    height: 94px;
     display: flex;
     gap: 23px;
     color: white;
@@ -66,6 +77,13 @@ body {
 .homePage2-card h4 {
     color: #F67E7E;
     margin-bottom: 16px;
+}
+
+.homePage2-card div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .homePage2-card p {
@@ -90,15 +108,19 @@ body {
 
 .homePage3 .h2 {
     width: 932px;
+    margin: auto;
     text-align: center;
     font-size: 48px;
     line-height: 48px;
     color: white;
-    margin-bottom: 56px;
+    margin-bottom: 12px;
 }
 
 .homePage3-cards {
-    margin-top: 35px;
+    /* margin-top: 35px; */
+    width: 1110px;
+    height: 313px;
+    margin-left: 12px;
     display: flex;
     gap: 30px;
 }
@@ -107,13 +129,14 @@ body {
     background: url(../img/noDifference/quote.png);
     background-repeat: no-repeat;
     background-position: top center;
-    width: 330px;
+    width: 344px;
+    height: auto;
     text-align: center;
     color: white;
 }
 
 .homePage3-card .elementp {
-    padding-top: 30px;
+    padding-top: 32px;
     font-weight: 600;
     line-height: 25px;
     font-size: 15px;
@@ -131,7 +154,32 @@ body {
     font-style: italic;
     font-weight: 600;
     line-height: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+}
+
+#Page3-card{
+    padding-right: 15px;
+    img{
+        margin-top: 2px;
+        margin-right: 2px;
+    }
+}
+
+#PAge3-card{
+    img{
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+}
+
+#page3-card{
+    width: 350px;
+    p{
+        padding-left: 5px;
+    }
+    img{
+        margin-top: 13px;
+    }
 }
 
 .homePage4 {
@@ -143,7 +191,8 @@ body {
 }
 
 .homePage4 div {
-    padding: 76px;
+    width: 1078px;
+    padding: 76px 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -157,8 +206,8 @@ body {
 .homePage4 a {
     text-decoration: none;
     display: inline-block;
-    width: 163px;
-    padding: 9px 32px;
+    width: 153px;
+    padding: 10px 24px 8px;
     text-align: center;
     color: black;
     border: 2px solid black;
@@ -182,15 +231,16 @@ footer {
 }
 
 .left {
+    width: 730px;
     display: flex;
-    gap: 125px;
+    gap: 110px;
 }
 
 .logo a {
     text-decoration: none;
     font-size: 18px;
     line-height: 28px;
-    margin-right: 40px;
+    margin-right: 36px;
     color: white;
     transition: all 700ms linear;
 }
@@ -200,7 +250,7 @@ footer {
 }
 
 .logo img {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .info {
@@ -227,16 +277,42 @@ footer {
 }
 
 .right p {
+    padding-left: 2px;
     font-size: 15px;
     font-weight: 600;
     line-height: 25px;
     color: #99a8a9;
 }
 
+@media (width<1400px) {
+    .section{
+        width: 1200px;
+        margin: auto;
+    }
+}
 
-@media (width<809px) {
+@media (width<1200px) {
+    .section{
+        width: 1140px;
+        margin: auto;
+    }
+}
+
+@media (width<992px) {
+    .section{
+        width: 960px;
+        margin: auto;
+    }
+}
+
+
+@media (width<768px) {
+    .section{
+        width: 768px;
+        margin: auto;
+    }
     .container {
-        max-width: 689px;
+        max-width: 683px;
         margin: 0 auto;
         padding: 0 40px;
     }
@@ -358,6 +434,10 @@ footer {
 }
 
 @media (width<600px) {
+    .section{
+        width: 375px;
+        margin: auto;
+    }
     .container {
         max-width: 327px;
         margin: 0 auto;

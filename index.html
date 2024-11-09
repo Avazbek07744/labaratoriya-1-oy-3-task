@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="myteam - Your trusted team for delivering quality projects and services. We are committed to achieving your goals with professionalism.">
+    <meta name="description"
+        content="myteam - Your trusted team for delivering quality projects and services. We are committed to achieving your goals with professionalism.">
     <meta name="keywords" content="myteam, professional team, project management, quality service, trusted team">
     <meta name="author" content="Najot talim labaratoriya 3-task">
     <meta property="og:title" content="myteam - Professional Project Management and Services">
-    <meta property="og:description" content="Your trusted team for delivering quality projects and services. We are here to help you succeed.">
+    <meta property="og:description"
+        content="Your trusted team for delivering quality projects and services. We are here to help you succeed.">
 
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>myteam</title>
     <style>
         .main {
@@ -24,7 +26,8 @@
         }
 
         .main header nav {
-            padding-top: 73px;
+            height: 48px;
+            padding-top: 74px;
             display: flex;
             justify-content: space-between;
             align-items: start;
@@ -43,7 +46,7 @@
         .nav-left ul {
             display: flex;
             gap: 40px;
-            margin-top: 10px;
+            margin-top: 12px;
         }
 
         .nav-left ul li a {
@@ -68,12 +71,14 @@
         }
 
         .nav-right {
+            margin: 0 0 5px 28px;
             text-decoration: none;
-            padding: 9px 32px;
+            padding: 11px 30px;
             color: white;
             border: 2px solid white;
             border-radius: 50px;
             transition: all 700ms linear;
+            max-height: 48px;
         }
 
         .nav-right:hover {
@@ -82,7 +87,8 @@
         }
 
         main {
-            padding-top: 129px;
+            padding-top: 174.5px;
+            height: 200px;
             display: flex;
             justify-content: space-between;
         }
@@ -103,7 +109,7 @@
         main div {
             color: white;
             width: 445px;
-            height: 166px;
+            height: 195px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -120,7 +126,32 @@
             font-weight: 600;
         }
 
-        @media (width<809px) {
+        @media (width<1400px) {
+            .section {
+                width: 1200px;
+                margin: auto;
+            }
+
+            main h1 {
+                width: 530px;
+            }
+        }
+
+        @media (width<1200px) {
+            .section {
+                width: 1140px;
+                margin: auto;
+            }
+        }
+
+        @media (width<992px) {
+            .section {
+                width: 960px;
+                margin: auto;
+            }
+        }
+
+        @media (width<768px) {
             .container {
                 width: 689px;
                 margin: 0 auto;
@@ -133,10 +164,7 @@
             }
 
             header {
-                padding-top: 64px;
-            }
-
-            header {
+                padding-top: 58px;
                 padding-bottom: 112px;
             }
 
@@ -183,7 +211,8 @@
                 text-align: center;
             }
 
-            .nav-left ul,.nav-right {
+            .nav-left ul,
+            .nav-right {
                 display: none;
             }
 
@@ -241,145 +270,148 @@
 </head>
 
 <body>
-    <div class="main">
-        <header class="container">
-            <nav>
-                <div class="nav-left">
-                    <div class="logo">
-                        <img src="./img/svg/logo.svg" loading="lazy" alt="logo image">
+    <div class="section">
+        <div class="main">
+            <header class="container">
+                <nav>
+                    <div class="nav-left">
+                        <div class="logo">
+                            <img src="./img/svg/logo.svg" loading="lazy" alt="logo image">
+                        </div>
+                        <ul>
+                            <li><a class="element" href="/">home</a></li>
+                            <li><a class="element" href="./pages/about.html">about</a></li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li><a class="element" href="/">home</a></li>
-                        <li><a class="element" href="./pages/about.html">about</a></li>
-                    </ul>
-                </div>
-                <a class="nav-right" href="./pages/contact.html">contact us</a>
-                <img class="imager" src="./img/svg/menu.svg" alt="">
-            </nav>
-        </header>
-        <main class="container">
-            <h1>Find the best <span>talent</span></h1>
-            <div>
-                <div class="b"></div>
-                <p class="elementp">
-                    Finding the right people and building high performing teams can be hard. Most companies aren’t
-                    tapping into the abundance of global talent. We’re about to change that.
-                </p>
-            </div>
-        </main>
-    </div>
-
-    <div class="homePage2">
-        <div class="homePage2-info container">
-            <div class="left-info">
-                <div class="b"></div>
-                <h2 class="h2">
-                    Build & manage distributed teams like no one else.
-                </h2>
-            </div>
-            <div class="homePage2-cards">
-                <div class="homePage2-card">
-                    <img src="./img/svg/man.svg" height="72" alt="">
-                    <div>
-                        <h4>Experienced Individuals</h4>
-                        <p>
-                            Our network is made up of highly experienced professionals who are passionate about what
-                            they do.
-                        </p>
-                    </div>
-                </div>
-                <div class="homePage2-card">
-                    <img src="./img/svg/mexanizm.svg" height="72" alt="">
-                    <div>
-                        <h4>Easy to Implement</h4>
-                        <p>
-                            Our network is made up of highly experienced professionals who are passionate about what
-                            they do.
-                        </p>
-                    </div>
-                </div>
-                <div class="homePage2-card">
-                    <img src="./img/svg/charat.svg" height="72" alt="">
-                    <div>
-                        <h4>Enhanced Productivity</h4>
-                        <p>
-                            Our network is made up of highly experienced professionals who are passionate about what
-                            they do.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="homePage3">
-        <div class="homePage3-info container">
-            <h2 class="h2">
-                Delivering real results for top companies. Some of our success stories.
-            </h2>
-            <div class="homePage3-cards">
-                <div class="homePage3-card">
-                    <p class="elementp">
-                        “The team perfectly fit the specialized skill set required. They focused on the most essential
-                        features helping us launch the platform eight months faster than planned.”
-                    </p>
-                    <h4>Kady Baker</h4>
-                    <p class="p">Product Manager at Bookmark</p>
-                    <img src="./img/noDifference/women_one.png" width="62" height="62" alt="">
-                </div>
-                <div class="homePage3-card">
-                    <p class="elementp">
-                        “We needed to automate our entire onboarding process. The team came in and built out the whole
-                        journey. Since going live, user retention has gone through the roof!”
-                    </p>
-                    <h4>Aiysha Reese</h4>
-                    <p class="p">Founder of Manage</p>
-                    <img src="./img/noDifference/women_three.png" width="62" height="62" alt="">
-                </div>
-                <div class="homePage3-card">
-                    <p class="elementp">
-                        “Amazing. Our team helped us build an app that delivered a new experience for hiring a physio.
-                        The launch was an instant success with 100k downloads in the first month.”
-                    </p>
-                    <h4>Arthur Clarke</h4>
-                    <p class="p">Co-founder of MyPhysio</p>
-                    <img src="./img/noDifference/grendfather.png" width="62" height="62" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="homePage4">
-        <div class="container">
-            <h3>Ready to get started?</h3>
-            <a href="./pages/contact.html">contact us</a>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-info container">
-            <div class="left">
-                <div class="logo">
-                    <img src="./img/svg/logo.svg" alt="">
-                    <div>
-                        <a href="../index.html">home</a>
-                        <a href="./about.html">about</a>
-                    </div>
-                </div>
-                <p class="info">
-                    987 Hillcrest <br> Lane Irvine, <br> CA California 92714 <br>Call Us : 949-833-7432
-                </p>
-            </div>
-            <div class="right">
+                    <a class="nav-right" href="./pages/contact.html">contact us</a>
+                    <img class="imager" src="./img/svg/menu.svg" alt="">
+                </nav>
+            </header>
+            <main class="container">
+                <h1>Find the best <span>talent</span></h1>
                 <div>
-                    <img src="./img/svg/facebook.svg" alt="facebook icon">
-                    <img src="./img/svg/Path.svg" alt="path icon">
-                    <img src="./img/svg/twitter.svg" alt="twitter icon">
+                    <div class="b"></div>
+                    <p class="elementp">
+                        Finding the right people and building high performing teams can be hard. Most companies aren’t
+                        tapping into the abundance of global talent. We’re about to change that.
+                    </p>
                 </div>
-                <p>Copyright 2020. All Rights Reserved</p>
+            </main>
+        </div>
+
+        <div class="homePage2">
+            <div class="homePage2-info container">
+                <div class="left-info">
+                    <div class="b"></div>
+                    <h2 class="h2">
+                        Build & manage distributed teams like no one else.
+                    </h2>
+                </div>
+                <div class="homePage2-cards">
+                    <div class="homePage2-card">
+                        <img src="./img/svg/man.svg" height="72" alt="">
+                        <div>
+                            <h4>Experienced Individuals</h4>
+                            <p>
+                                Our network is made up of highly experienced professionals who are passionate about what
+                                they do.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="homePage2-card">
+                        <img src="./img/svg/mexanizm.svg" height="72" alt="">
+                        <div>
+                            <h4>Easy to Implement</h4>
+                            <p>
+                                Our processes have been refined over years of implementation meaning our teams always
+                                deliver.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="homePage2-card">
+                        <img src="./img/svg/charat.svg" height="72" alt="">
+                        <div>
+                            <h4>Enhanced Productivity</h4>
+                            <p>
+                                Our customized platform with in-built analytics helps you manage your distributed teams.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+
+        <div class="homePage3">
+            <div class="homePage3-info container">
+                <h2 class="h2">
+                    Delivering real results for top companies. Some of our success stories.
+                </h2>
+                <div class="homePage3-cards">
+                    <div id="Page3-card" class="homePage3-card">
+                        <p class="elementp">
+                            “The team perfectly fit the specialized skill set required. They focused on the most
+                            essential
+                            features helping us launch the platform eight months faster than planned.”
+                        </p>
+                        <h4>Kady Baker</h4>
+                        <p class="p">Product Manager at Bookmark</p>
+                        <img src="./img/noDifference/women_one.png" width="62" height="62" alt="">
+                    </div>
+                    <div id="PAge3-card" class="homePage3-card">
+                        <p class="elementp">
+                            “We needed to automate our entire onboarding process. The team came in and built out the
+                            whole
+                            journey. Since going live, user retention has gone through the roof!”
+                        </p>
+                        <h4>Aiysha Reese</h4>
+                        <p class="p">Founder of Manage</p>
+                        <img src="./img/noDifference/women_three.png" width="62" height="62" alt="">
+                    </div>
+                    <div id="page3-card" class="homePage3-card">
+                        <p class="elementp">
+                            “Amazing. Our team helped us build an app that delivered a new experience for hiring a
+                            physio. The launch was an instant success with 100k downloads in the first month.”
+                        </p>
+                        <h4>Arthur Clarke</h4>
+                        <p class="p">Co-founder of MyPhysio</p>
+                        <img src="./img/noDifference/grendfather.png" width="62" height="62" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="homePage4">
+            <div class="container">
+                <h3>Ready to get started?</h3>
+                <a href="./pages/contact.html">contact us</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-info container">
+                <div class="left">
+                    <div class="logo">
+                        <img src="./img/svg/logo.svg" alt="">
+                        <div>
+                            <a href="../index.html">home</a>
+                            <a href="./about.html">about</a>
+                        </div>
+                    </div>
+                    <p class="info">
+                        987 Hillcrest Lane <br>Irvine, CA <br>California 92714 <br>Call Us : 949-833-7432
+                    </p>
+                </div>
+                <div class="right">
+                    <div>
+                        <img src="./img/svg/facebook.svg" alt="facebook icon">
+                        <img src="./img/svg/Path.svg" alt="path icon">
+                        <img src="./img/svg/twitter.svg" alt="twitter icon">
+                    </div>
+                    <p>Copyright 2020. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
